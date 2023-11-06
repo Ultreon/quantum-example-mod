@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "example_mod",
+  "name": "Example Mod",
+  "version": "0.1.0",
+  "environment": "*",
+  "description": "Example description",
+  "license": "All-Rights-Reserved",
+  "icon": "assets/example_mod/icon.png",
+  "authors": [
+    "Example Author"
+  ],
+  "mixins": [
+    "example-mod.mixins.json"
+  ],
+  "depends": {
+    "ultracraft": "0.1.0"
+  },
+  "entrypoints": {
+    "init": [
+      "com.example.craft.mod.ExampleMod"
+    ]
+  }
+}
