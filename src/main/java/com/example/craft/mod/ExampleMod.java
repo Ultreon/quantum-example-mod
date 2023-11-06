@@ -1,9 +1,7 @@
 package com.example.craft.mod;
 
+import com.example.craft.mod.init.ModBlocks;
 import com.ultreon.craft.ModInit;
-import com.ultreon.craft.entity.EntityType;
-import com.ultreon.libs.commons.v0.Identifier;
-import com.ultreon.libs.registries.v0.Registry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,5 +13,7 @@ public class ExampleMod implements ModInit {
     @Override
     public void onInitialize() {
         LOGGER.info("Hello, world!");
+
+        ModBlocks.register();
     }
 }
