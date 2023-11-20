@@ -6,6 +6,7 @@ build/
 
 ### IntelliJ IDEA ###
 .idea/*.xml
+.idea/*/
 .idea/runConfigurations
 .idea/modules/
 .idea/shelf/

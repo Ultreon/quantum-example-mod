@@ -1,6 +1,7 @@
 package com.example.craft.mod.mixin;
 
 import com.example.craft.mod.ExampleMod;
+import com.ultreon.craft.client.gui.GuiBuilder;
 import com.ultreon.craft.client.gui.screens.Screen;
 import com.ultreon.craft.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
@@ -14,8 +15,8 @@ public abstract class TitleScreenMixin extends Screen {
         super(title);
     }
 
-    @Inject(method = "init", at = @At("HEAD"))
-    public void exampleMod$injectInit(CallbackInfo ci) {
+    @Inject(method = "build", at = @At("HEAD"))
+    public void exampleMod$injectInit(GuiBuilder builder, CallbackInfo ci) {
         ExampleMod.LOGGER.info("Hello from TitleScreenMixin!");
     }
 }

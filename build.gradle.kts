@@ -19,10 +19,10 @@ plugins {
 
 apply(plugin = "org.jetbrains.gradle.plugin.idea-ext")
 
-group = "com.example.craft"
+group = "com.example.craftmod"
 version = "0.1.0"
 
-val ultracraftVersion = "177e94f289"
+val ultracraftVersion = "dev-SNAPSHOT"
 
 repositories {
     mavenCentral()
