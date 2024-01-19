@@ -22,7 +22,7 @@ apply(plugin = "org.jetbrains.gradle.plugin.idea-ext")
 group = "com.example.craftmod"
 version = "0.1.0"
 
-val ultracraftVersion = "dev-SNAPSHOT"
+val ultracraftVersion = "XyperCode~block-entity-and-models-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -39,13 +39,15 @@ dependencies {
     implementation("com.github.Ultreon.ultracraft:server:$ultracraftVersion")
     implementation("com.github.Ultreon.ultracraft:gameprovider:$ultracraftVersion")
 
-    implementation("com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.0")
+    implementation("com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.1")
     implementation("com.badlogicgames.gdx:gdx-platform:1.12.0:natives-desktop")
     implementation("com.badlogicgames.gdx:gdx-box2d-platform:1.12.0:natives-desktop")
     implementation("com.badlogicgames.gdx:gdx-bullet-platform:1.12.0:natives-desktop")
     implementation("com.badlogicgames.gdx-controllers:gdx-controllers-desktop:2.2.1")
     implementation("com.badlogicgames.gdx:gdx-freetype-platform:1.12.0:natives-desktop")
     implementation("com.badlogicgames.gdx-video:gdx-video-lwjgl3:1.3.2-SNAPSHOT")
+
+    implementation("org.apache.logging.log4j:log4j-slf4j2-impl:2.20.0")
 }
 
 fun setupIdea() {

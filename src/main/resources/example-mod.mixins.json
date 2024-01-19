@@ -1,6 +1,8 @@
 {
   "package": "com.example.craft.mod.mixin",
-  "mixins": [
+  "client": [
     "TitleScreenMixin"
+  ],
+  "mixins": [
   ]
 }
