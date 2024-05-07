@@ -1,15 +1,15 @@
 package com.example.craft.mod.init;
 
 import com.example.craft.mod.ExampleMod;
-import com.ultreon.craft.block.Block;
-import com.ultreon.craft.registry.Registries;
-import com.ultreon.libs.registries.v0.DelayedRegister;
-import com.ultreon.libs.registries.v0.RegistrySupplier;
+import dev.ultreon.quantum.block.Block;
+import dev.ultreon.quantum.registry.DeferredElement;
+import dev.ultreon.quantum.registry.Registries;
+import dev.ultreon.quantum.registry.DeferRegistry;
 
 public class ModBlocks {
-    private static final DelayedRegister<Block> REGISTER = DelayedRegister.create(ExampleMod.MOD_ID, Registries.BLOCKS);
+    private static final DeferRegistry<Block> REGISTER = DeferRegistry.of(ExampleMod.MOD_ID, Registries.BLOCK);
 
-    public static final RegistrySupplier<Block> EXAMPLE_BLOCK = REGISTER.register("example_block", Block::new);
+    public static final DeferredElement<Block> EXAMPLE_BLOCK = REGISTER.defer("example_block", Block::new);
 
     public static void register() {
         REGISTER.register();

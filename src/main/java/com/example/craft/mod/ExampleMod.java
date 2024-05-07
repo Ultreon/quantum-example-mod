@@ -1,7 +1,7 @@
 package com.example.craft.mod;
 
 import com.example.craft.mod.init.ModBlocks;
-import com.ultreon.craft.ModInit;
+import dev.ultreon.quantum.ModInit;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
