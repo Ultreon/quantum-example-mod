@@ -100,7 +100,7 @@ commonProperties
 
                 runConfigurations {
                     create(
-                        "Ultracraft Client",
+                        "Quantum Client",
                         Application::class.java
                     ) {                       // Create new run configuration "MyApp" that will run class foo.App
                         jvmArgs =
@@ -111,7 +111,7 @@ commonProperties
                         programParameters = "--gameDir=."
                     }
                     create(
-                        "Ultracraft Client Alt",
+                        "Quantum Client Alt",
                         Application::class.java
                     ) {                       // Create new run configuration "MyApp" that will run class foo.App
                         jvmArgs =
@@ -122,7 +122,7 @@ commonProperties
                         programParameters = "--gameDir=."
                     }
                     create(
-                        "Ultracraft Server",
+                        "Quantum Server",
                         Application::class.java
                     ) {                       // Create new run configuration "MyApp" that will run class foo.App
                         jvmArgs =
