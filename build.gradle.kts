@@ -19,10 +19,10 @@ plugins {
 
 apply(plugin = "org.jetbrains.gradle.plugin.idea-ext")
 
-group = "com.example.craftmod"
+group = "com.example.quantum-mod"
 version = "0.1.0"
 
-val ultracraftVersion = "dev-SNAPSHOT"
+val quantumVersion = "5a0882aea1"
 
 repositories {
     mavenCentral()
@@ -34,10 +34,10 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.Ultreon.ultracraft:client:$ultracraftVersion")
-    implementation("com.github.Ultreon.ultracraft:desktop:$ultracraftVersion")
-    implementation("com.github.Ultreon.ultracraft:server:$ultracraftVersion")
-    implementation("com.github.Ultreon.ultracraft:gameprovider:$ultracraftVersion")
+    implementation("dev.ultreon.quantum-voxel:quantum-client:$quantumVersion")
+    implementation("dev.ultreon.quantum-voxel:quantum-desktop:$quantumVersion")
+    implementation("dev.ultreon.quantum-voxel:quantum-server:$quantumVersion")
+    implementation("dev.ultreon.quantum-voxel:quantum-gameprovider:$quantumVersion")
 
     implementation("com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.0")
     implementation("com.badlogicgames.gdx:gdx-platform:1.12.0:natives-desktop")
