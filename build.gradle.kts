@@ -22,7 +22,7 @@ apply(plugin = "org.jetbrains.gradle.plugin.idea-ext")
 group = "com.example.quantum-mod"
 version = "0.1.0"
 
-val quantumVersion = "5a0882aea1"
+val quantumVersion = "wip~more-entities-SNAPSHOT"
 
 repositories {
     mavenCentral()
