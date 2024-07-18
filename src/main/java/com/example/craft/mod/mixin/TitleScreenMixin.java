@@ -2,7 +2,7 @@ package com.example.craft.mod.mixin;
 
 import com.example.craft.mod.ExampleMod;
 import dev.ultreon.quantum.client.gui.GuiBuilder;
-import dev.ultreon.quantum.client.gui.screens.Screen;
+import dev.ultreon.quantum.client.gui.Screen;
 import dev.ultreon.quantum.client.gui.screens.TitleScreen;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

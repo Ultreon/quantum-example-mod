@@ -22,22 +22,21 @@ apply(plugin = "org.jetbrains.gradle.plugin.idea-ext")
 group = "com.example.quantum-mod"
 version = "0.1.0"
 
-val quantumVersion = "wip~more-entities-SNAPSHOT"
+val quantumVersion: String by project
 
 repositories {
     mavenCentral()
+    maven("https://gitlab.com/api/v4/groups/9962021/-/packages/maven")
     maven("https://oss.sonatype.org/content/repositories/snapshots")
-    maven("https://maven.fabricmc.net/")
-    maven("https://github.com/Ultreon/ultreon-data/raw/main/.mvnrepo/")
-    maven("https://github.com/Ultreon/corelibs/raw/main/.mvnrepo/")
     maven("https://jitpack.io")
+    maven("https://maven.fabricmc.net/")
 }
 
 dependencies {
-    implementation("dev.ultreon.quantum-voxel:quantum-client:$quantumVersion")
-    implementation("dev.ultreon.quantum-voxel:quantum-desktop:$quantumVersion")
-    implementation("dev.ultreon.quantum-voxel:quantum-server:$quantumVersion")
-    implementation("dev.ultreon.quantum-voxel:quantum-gameprovider:$quantumVersion")
+    implementation("dev.ultreon.quantum:quantum-client:$quantumVersion")
+    implementation("dev.ultreon.quantum:quantum-desktop:$quantumVersion")
+    implementation("dev.ultreon.quantum:quantum-server:$quantumVersion")
+    implementation("dev.ultreon.quantum:quantum-gameprovider:$quantumVersion")
 
     implementation("com.badlogicgames.gdx:gdx-backend-lwjgl3:1.12.0")
     implementation("com.badlogicgames.gdx:gdx-platform:1.12.0:natives-desktop")
