@@ -1,20 +1,20 @@
 {
   "schemaVersion": 1,
-  "id": "example_mod",
-  "name": "Example Mod",
-  "version": "0.1.0",
+  "id": "${mod_id}",
+  "name": "${mod_displayName}",
+  "version": "${mod_version}",
   "environment": "*",
-  "description": "Example description",
+  "description": "${mod_description}",
   "license": "All-Rights-Reserved",
   "icon": "assets/example_mod/icon.png",
   "authors": [
     "Example Author"
   ],
   "mixins": [
-    "example-mod.mixins.json"
+    "${mod_name}.mixins.json"
   ],
   "depends": {
-    "quantum": "*"
+    "quantum": ">=${versions_quantum}"
   },
   "entrypoints": {
     "init": [
